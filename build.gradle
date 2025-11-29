@@ -21,8 +21,9 @@ dependencies {
 
 test {
     useJUnitPlatform()
-    failFast = false // Позволяет выполнять все тесты, но сборка упадёт если любой тест не пройдёт
+        ignoreFailures = false
     testLogging {
         events "passed", "skipped", "failed"
+        exceptionFormat "full"
     }
 }
