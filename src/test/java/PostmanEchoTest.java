@@ -16,3 +16,4 @@ public class PostmanEchoTest {
                 .body("wrongField", equalTo("some data"));
     }
 }
+
